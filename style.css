@@ -626,7 +626,7 @@ h1, h2, h3, h4 {
   letter-spacing: 0.02em;
 }
 
-/* Live badge */
+/* Portfolio badges */
 .live-badge {
   font-family: 'DM Sans', sans-serif;
   font-size: 0.6rem; font-weight: 700;
@@ -637,6 +637,18 @@ h1, h2, h3, h4 {
   vertical-align: middle;
   position: relative; top: -1px;
 }
+.demo-badge {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.6rem; font-weight: 700;
+  text-transform: uppercase; letter-spacing: 1px;
+  background: var(--vermillion); color: #fff;
+  padding: 2px 8px; border-radius: 10px;
+  margin-left: 8px;
+  vertical-align: middle;
+  position: relative; top: -1px;
+  transition: background var(--duration) var(--ease);
+}
+a.portfolio-card:hover .demo-badge { background: var(--indigo); }
 
 /* Clickable portfolio cards */
 a.portfolio-card {
