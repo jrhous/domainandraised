@@ -163,12 +163,19 @@ h1, h2, h3, h4 {
 }
 .btn-outline:hover { background: var(--vermillion); color: #fff; }
 .btn-full { width: 100%; }
+.btn-sm { padding: 10px 20px; font-size: 0.82rem; margin-top: 14px; }
 
 /* Dark section button overrides */
 .section-dark .btn-primary { background: var(--gold); color: var(--bg-dark); }
 .section-dark .btn-primary:hover {
   background: #D49A14; color: var(--bg-dark);
   box-shadow: 0 8px 25px rgba(232, 168, 23, 0.3);
+}
+.section-dark .btn-outline {
+  color: var(--gold); border-color: var(--gold);
+}
+.section-dark .btn-outline:hover {
+  background: var(--gold); color: var(--bg-dark);
 }
 
 /* ========== HERO ========== */
