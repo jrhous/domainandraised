@@ -7,15 +7,17 @@
   <meta name="description" content="We build websites, AI chatbots, and automations that actually work. No fluff, no contracts, just results for your business.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400;1,9..40,500&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+  <div class="grain" aria-hidden="true"></div>
+
   <!-- NAV -->
   <nav id="nav">
     <div class="nav-inner">
-      <a href="#" class="logo">Domain<span>&amp;Raised</span></a>
+      <a href="#" class="logo">Domain<span>&amp;</span>Raised</a>
       <button class="menu-toggle" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -30,81 +32,121 @@
 
   <!-- HERO -->
   <header id="hero">
-    <div class="hero-grid">
-      <div class="hero-text">
-        <p class="hero-tag">For businesses tired of being invisible online</p>
-        <h1>Your customers are looking for you <em>right now.</em><br>Can they find you?</h1>
-        <p class="hero-sub">We build websites that actually get calls, chatbots that don't suck, and automations that save you 10+ hours a week. Small business only. No corporate BS.</p>
-        <div class="hero-ctas">
-          <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
-          <a href="#work" class="btn btn-ghost">See Our Work &darr;</a>
+    <div class="container">
+      <p class="hero-tag">For businesses tired of being invisible online</p>
+
+      <div class="hero-split">
+        <div class="hero-text">
+          <h1>Your customers are looking for you <em>right now.</em></h1>
+          <p class="hero-kicker">Can they find you?</p>
+          <p class="hero-sub">We build websites that actually get calls, chatbots that don't suck, and automations that save you 10+ hours a week. Small business only. No corporate BS.</p>
+          <div class="hero-ctas">
+            <a href="#contact" class="btn btn-primary">Get a Free Quote</a>
+            <a href="#work" class="btn btn-ghost">See Our Work &darr;</a>
+          </div>
         </div>
-        <div class="hero-proof">
-          <div class="proof-item">
-            <span class="proof-num">48hr</span>
-            <span class="proof-label">Average delivery</span>
-          </div>
-          <div class="proof-item">
-            <span class="proof-num">$0</span>
-            <span class="proof-label">Upfront for retainer clients</span>
-          </div>
-          <div class="proof-item">
-            <span class="proof-num">24/7</span>
-            <span class="proof-label">Your chatbot never sleeps</span>
+        <div class="hero-visual">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <span class="terminal-title">domainandraised.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> build --website "Joe's Plumbing"</p>
+              <p class="t-output">&gt; Designing responsive layout... <span class="t-check">done</span></p>
+              <p class="t-output">&gt; Adding contact forms + SEO... <span class="t-check">done</span></p>
+              <p class="t-output">&gt; Deploying to production... <span class="t-check">done</span></p>
+              <p class="t-output">&gt; <span class="t-success">Site live at joesplumbing.com</span></p>
+              <p>&nbsp;</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> deploy --chatbot</p>
+              <p class="t-output">&gt; Training AI on 47 FAQs... <span class="t-check">done</span></p>
+              <p class="t-output">&gt; <span class="t-success">Chatbot answering customers 24/7</span></p>
+              <p>&nbsp;</p>
+              <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> automate --leads</p>
+              <p class="t-output">&gt; New lead &rarr; CRM &rarr; auto-email &rarr; Slack ping</p>
+              <p class="t-output">&gt; <span class="t-success">You'll never miss a lead again.</span></p>
+              <p class="t-cursor">_</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="hero-visual">
-        <div class="terminal">
-          <div class="terminal-bar">
-            <span class="dot red"></span>
-            <span class="dot yellow"></span>
-            <span class="dot green"></span>
-            <span class="terminal-title">domainandraised.sh</span>
-          </div>
-          <div class="terminal-body">
-            <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> build --website "Joe's Plumbing"</p>
-            <p class="t-output">&gt; Designing responsive layout... <span class="t-check">done</span></p>
-            <p class="t-output">&gt; Adding contact forms + SEO... <span class="t-check">done</span></p>
-            <p class="t-output">&gt; Deploying to production... <span class="t-check">done</span></p>
-            <p class="t-output">&gt; <span class="t-success">Site live at joesplumbing.com</span></p>
-            <p>&nbsp;</p>
-            <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> deploy --chatbot</p>
-            <p class="t-output">&gt; Training AI on 47 FAQs... <span class="t-check">done</span></p>
-            <p class="t-output">&gt; <span class="t-success">Chatbot answering customers 24/7</span></p>
-            <p>&nbsp;</p>
-            <p><span class="t-prompt">$</span> <span class="t-cmd">dar</span> automate --leads</p>
-            <p class="t-output">&gt; New lead &rarr; CRM &rarr; auto-email &rarr; Slack ping</p>
-            <p class="t-output">&gt; <span class="t-success">You'll never miss a lead again.</span></p>
-            <p class="t-cursor">_</p>
-          </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num">48hr</span>
+          <span class="stat-label">Average delivery</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">$0</span>
+          <span class="stat-label">Upfront for retainer clients</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-num">24/7</span>
+          <span class="stat-label">Your chatbot never sleeps</span>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- PROBLEM / PAIN SECTION -->
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <span>Websites That Convert</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>AI Chatbots</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>Lead Automation</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>No Contracts</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>48hr Delivery</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>Small Business Only</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>Websites That Convert</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>AI Chatbots</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>Lead Automation</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>No Contracts</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>48hr Delivery</span>
+      <span class="marquee-dot">&#9670;</span>
+      <span>Small Business Only</span>
+      <span class="marquee-dot">&#9670;</span>
+    </div>
+  </div>
+
+  <!-- PAIN / PROBLEM -->
   <section id="problem" class="section">
     <div class="container">
-      <h2 class="section-title">Sound familiar?</h2>
+      <div class="section-header">
+        <p class="section-tag">The problem</p>
+        <h2 class="section-title">Sound <em>familiar?</em></h2>
+      </div>
       <div class="pain-grid">
-        <div class="pain-card">
-          <div class="pain-icon">&#128222;</div>
+        <div class="pain-card" data-reveal>
+          <span class="pain-num">01</span>
           <h3>Phone's not ringing</h3>
           <p>You're great at what you do, but nobody can find you online. Meanwhile, your competitor with the terrible reviews is on page 1 of Google.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#9203;</div>
+        <div class="pain-card" data-reveal>
+          <span class="pain-num">02</span>
           <h3>Drowning in busywork</h3>
           <p>Copy-pasting emails, updating spreadsheets, chasing invoices. You started a business to do what you love, not data entry.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#128683;</div>
+        <div class="pain-card" data-reveal>
+          <span class="pain-num">03</span>
           <h3>Your website is... embarrassing</h3>
           <p>Built in 2016. Looks like it. "Under construction" page still up. Or worse — you don't have one at all.</p>
         </div>
-        <div class="pain-card">
-          <div class="pain-icon">&#127769;</div>
+        <div class="pain-card" data-reveal>
+          <span class="pain-num">04</span>
           <h3>Missing leads after hours</h3>
           <p>Someone visits your site at 9 PM with a question. No one's there to answer. They go to the next guy. Money, gone.</p>
         </div>
@@ -115,11 +157,12 @@
   <!-- SERVICES -->
   <section id="services" class="section section-dark">
     <div class="container">
-      <p class="section-tag">What we build</p>
-      <h2 class="section-title">Three things. We do them really well.</h2>
+      <div class="section-header">
+        <p class="section-tag">What we build</p>
+        <h2 class="section-title">Three things.<br>We do them <em>really</em> well.</h2>
+      </div>
       <div class="services-grid">
-
-        <div class="service-card">
+        <div class="service-card" data-reveal>
           <div class="service-num">01</div>
           <h3>Websites That Get Calls</h3>
           <p>Not just pretty — built to convert. Mobile-perfect, fast-loading, SEO-ready. Your customers Google "plumber near me" and find <em>you</em>, not your competitor.</p>
@@ -133,7 +176,7 @@
           <div class="service-price">From <strong>$750</strong></div>
         </div>
 
-        <div class="service-card featured">
+        <div class="service-card featured" data-reveal>
           <div class="service-badge">Most Popular</div>
           <div class="service-num">02</div>
           <h3>AI Chatbots That Don't Suck</h3>
@@ -148,7 +191,7 @@
           <div class="service-price">From <strong>$800</strong></div>
         </div>
 
-        <div class="service-card">
+        <div class="service-card" data-reveal>
           <div class="service-num">03</div>
           <h3>Automations That Save Hours</h3>
           <p>New lead comes in? Auto-added to your CRM, confirmation email sent, you get a text. All in 3 seconds. Zero manual work.</p>
@@ -161,15 +204,15 @@
           </ul>
           <div class="service-price">From <strong>$1,000</strong></div>
         </div>
-
       </div>
 
-      <div class="bundle-banner">
+      <div class="bundle-banner" data-reveal>
         <div class="bundle-text">
           <h3>The Full Stack Bundle</h3>
-          <p>Website + Chatbot + Automation. Everything your business needs. <strong>Save $550.</strong></p>
+          <p>Website + Chatbot + Automation. Everything your business needs.</p>
         </div>
         <div class="bundle-price">
+          <span class="bundle-savings">Save $550</span>
           <span class="bundle-was">$2,550</span>
           <span class="bundle-now">$2,000</span>
           <a href="#contact" class="btn btn-primary">Get the Bundle</a>
@@ -181,22 +224,24 @@
   <!-- HOW IT WORKS -->
   <section id="how" class="section">
     <div class="container">
-      <p class="section-tag">Dead simple</p>
-      <h2 class="section-title">Three steps. That's it.</h2>
+      <div class="section-header">
+        <p class="section-tag">How it works</p>
+        <h2 class="section-title">Three steps. <em>That's it.</em></h2>
+      </div>
       <div class="steps-grid">
-        <div class="step">
+        <div class="step" data-reveal>
           <div class="step-num">1</div>
           <h3>Tell us what you need</h3>
           <p>Fill out the form or call. 15-minute chat. We learn about your business, what's not working, and what you want to happen.</p>
         </div>
-        <div class="step-arrow">&rarr;</div>
-        <div class="step">
+        <div class="step-connector"></div>
+        <div class="step" data-reveal>
           <div class="step-num">2</div>
           <h3>We build it (fast)</h3>
           <p>Most projects delivered in 48-72 hours. Not weeks. Not months. You'll see progress daily and give feedback along the way.</p>
         </div>
-        <div class="step-arrow">&rarr;</div>
-        <div class="step">
+        <div class="step-connector"></div>
+        <div class="step" data-reveal>
           <div class="step-num">3</div>
           <h3>You get more business</h3>
           <p>Your phone rings more. Leads come in while you sleep. You stop doing busywork. That's the whole point.</p>
@@ -205,14 +250,15 @@
     </div>
   </section>
 
-  <!-- WORK / PORTFOLIO -->
-  <section id="work" class="section section-dark">
+  <!-- PORTFOLIO -->
+  <section id="work" class="section section-alt">
     <div class="container">
-      <p class="section-tag">Our work</p>
-      <h2 class="section-title">Recent builds</h2>
+      <div class="section-header">
+        <p class="section-tag">Our work</p>
+        <h2 class="section-title">Recent <em>builds</em></h2>
+      </div>
       <div class="portfolio-grid">
-
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-reveal>
           <div class="portfolio-img">
             <div class="portfolio-placeholder">
               <span>Christian's Handyman</span>
@@ -229,8 +275,7 @@
             </div>
           </div>
         </div>
-
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-reveal>
           <div class="portfolio-img">
             <div class="portfolio-placeholder accent">
               <span>Fresh Cuts Barbershop</span>
@@ -247,8 +292,7 @@
             </div>
           </div>
         </div>
-
-        <div class="portfolio-card">
+        <div class="portfolio-card" data-reveal>
           <div class="portfolio-img">
             <div class="portfolio-placeholder alt">
               <span>Sparkle Clean Co.</span>
@@ -265,7 +309,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </section>
@@ -273,11 +316,12 @@
   <!-- PRICING -->
   <section id="pricing" class="section">
     <div class="container">
-      <p class="section-tag">Transparent pricing</p>
-      <h2 class="section-title">No surprises. No hidden fees. No contracts.</h2>
+      <div class="section-header">
+        <p class="section-tag">Pricing</p>
+        <h2 class="section-title">No surprises. No hidden fees.<br><em>No contracts.</em></h2>
+      </div>
       <div class="pricing-grid">
-
-        <div class="price-card">
+        <div class="price-card" data-reveal>
           <h3>Starter Website</h3>
           <div class="price-amount">$750</div>
           <p class="price-type">One-time</p>
@@ -290,8 +334,7 @@
           </ul>
           <a href="#contact" class="btn btn-outline">Get Started</a>
         </div>
-
-        <div class="price-card popular">
+        <div class="price-card popular" data-reveal>
           <div class="popular-badge">Best Value</div>
           <h3>Full Stack Bundle</h3>
           <div class="price-amount">$2,000</div>
@@ -305,8 +348,7 @@
           </ul>
           <a href="#contact" class="btn btn-primary">Get the Bundle</a>
         </div>
-
-        <div class="price-card">
+        <div class="price-card" data-reveal>
           <h3>Monthly Growth</h3>
           <div class="price-amount">$350<small>/mo</small></div>
           <p class="price-type">Cancel anytime</p>
@@ -319,47 +361,42 @@
           </ul>
           <a href="#contact" class="btn btn-outline">Start Growing</a>
         </div>
-
       </div>
     </div>
   </section>
 
   <!-- FAQ -->
-  <section id="faq" class="section section-dark">
+  <section id="faq" class="section section-alt">
     <div class="container">
-      <h2 class="section-title">Questions you're probably asking</h2>
+      <div class="section-header">
+        <p class="section-tag">FAQ</p>
+        <h2 class="section-title">Questions you're <em>probably</em> asking</h2>
+      </div>
       <div class="faq-list">
-
         <details class="faq-item">
           <summary>How fast can you build my website?</summary>
           <p>Most websites are live within 48-72 hours. We're not a big agency with 6 layers of approval. You tell us what you need, we build it, you review it, done.</p>
         </details>
-
         <details class="faq-item">
           <summary>What if I hate it?</summary>
           <p>You won't, because we show you progress along the way. But if the final result isn't what you wanted, we revise until it is. We don't disappear after taking your money.</p>
         </details>
-
         <details class="faq-item">
           <summary>I'm not tech-savvy. Is this going to be complicated?</summary>
           <p>That's the whole point of hiring us. You focus on your business, we handle the tech. If you can send a text, you can work with us.</p>
         </details>
-
         <details class="faq-item">
           <summary>What does the AI chatbot actually do?</summary>
           <p>It answers customer questions 24/7 using info about YOUR business. It can book appointments, capture lead info (name, phone, email), and send it straight to you. Think of it as a receptionist that never sleeps.</p>
         </details>
-
         <details class="faq-item">
           <summary>Do I have to sign a long contract?</summary>
           <p>Nope. One-time projects are pay-once-done. Monthly retainers are cancel-anytime. We keep clients by being good, not by locking them in.</p>
         </details>
-
         <details class="faq-item">
           <summary>What kind of businesses do you work with?</summary>
           <p>Plumbers, electricians, barbers, cleaners, restaurants, contractors, salons, gyms, coaches, consultants — basically any local or small business that wants more customers and less busywork.</p>
         </details>
-
       </div>
     </div>
   </section>
@@ -370,12 +407,21 @@
       <div class="contact-grid">
         <div class="contact-text">
           <p class="section-tag">Let's go</p>
-          <h2>Ready to stop losing customers?</h2>
+          <h2>Ready to stop losing <em>customers?</em></h2>
           <p>Tell us about your business. We'll get back to you within 24 hours with a free, no-obligation quote. No sales pitch, just straight answers.</p>
           <div class="contact-details">
-            <p><strong>Email:</strong> hello@domainandraised.com</p>
-            <p><strong>Response time:</strong> Under 24 hours</p>
-            <p><strong>Free consultation:</strong> Always</p>
+            <div class="contact-item">
+              <strong>Email</strong>
+              <span>hello@domainandraised.com</span>
+            </div>
+            <div class="contact-item">
+              <strong>Response time</strong>
+              <span>Under 24 hours</span>
+            </div>
+            <div class="contact-item">
+              <strong>Free consultation</strong>
+              <span>Always</span>
+            </div>
           </div>
         </div>
         <form id="contact-form" class="contact-form" action="https://formspree.io/f/mpqoorvg" method="POST">
@@ -406,7 +452,7 @@
             <label for="message">Tell us more</label>
             <textarea id="message" name="message" rows="4" placeholder="What's your biggest headache right now?"></textarea>
           </div>
-          <button type="submit" class="btn btn-primary btn-full">Send It</button>
+          <button type="submit" class="btn btn-primary btn-full">Send It &rarr;</button>
           <p class="form-note">No spam. No sales calls. Just a real reply from a real person.</p>
         </form>
       </div>
@@ -417,7 +463,7 @@
   <footer>
     <div class="container footer-inner">
       <div class="footer-brand">
-        <a href="#" class="logo">Domain<span>&amp;Raised</span></a>
+        <a href="#" class="logo">Domain<span>&amp;</span>Raised</a>
         <p>Websites, chatbots & automations<br>for small businesses that want to grow.</p>
       </div>
       <div class="footer-links">
